@@ -1,0 +1,25 @@
+@import "_colores.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    min-width: 370px;
+}
+
+
+
+
+
+
+@import "_header.scss";
+@import "_info.scss";
+@import "_nuestraEmpresa.scss";
+@import "_productosCard.scss";
+@import "_map.scss";
+@import "_mapElement.scss";
+@import "_formulario.scss";
+@import "_footer.scss";

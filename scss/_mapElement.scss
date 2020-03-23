@@ -1,0 +1,18 @@
+.mapElement{
+    padding: 0;
+    .blackTitle{
+        height: 50px;
+        background-color: $footer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        i{
+            padding-left: 10px;
+            color: white;
+        }
+    }
+    #mapid{
+        height: 380px;
+    }
+}

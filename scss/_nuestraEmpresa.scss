@@ -1,0 +1,23 @@
+.nuestraEmpresa{
+    background-color: $nuestraEmpresaBack;
+    background-image: url(../img/Textura-fondo-historia.svg);
+    color: white;
+    .koiEmpresa{
+        width:50%;
+        margin-top: 90px;
+    }
+    h4{
+        margin-top: 30px;
+        font-size: 33px;
+        font-weight: 400;
+        line-height: 75px;
+    }
+    p{
+        margin:0;
+        margin-top: 28px;
+        padding-bottom: 81px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}

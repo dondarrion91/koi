@@ -1,0 +1,117 @@
+.headerAndInfo{
+    font-family: 'Montserrat', 'sans-serif';
+    
+    .mainHeader{
+
+        @media screen and (min-width:992px){
+            padding: 0px 15px;
+        }
+
+        @media screen and (max-width:768px){
+            margin-top: 20px;
+        }
+        
+        @media screen and (min-width:769px){
+            margin-top: 49px;
+        }
+
+        background-color: white;
+        
+        
+
+        .navbar{
+            ul{
+                li{
+                    a{
+                        
+                        @media screen and (min-width:769px){
+                            font-size: 16px;
+                            font-weight: 400;
+                            padding-left: 20px;
+                        }
+                        color:$headerFont;
+                        
+                    }
+                    a:hover{
+                        color:$mainButton;
+                        
+                    }
+                    
+                }
+            }
+
+            #navbarNav{
+                @media screen and (min-width:769px){
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+    .row{
+        
+        
+        .navbar-brand{
+            
+            .mainLogo{
+                width: 80px;
+                height: 65px;
+                @media screen and (max-width:768px){
+                    width: 80px;
+                    height: 65px;
+                }
+                
+                @media screen and (min-width:769px){
+                    width: 127px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    .navbar{
+        color: $headerFont;
+        .buttonsContainers1{
+            align-items: center;
+
+            
+
+            i{
+                font-size: 18px;
+                padding-left: 7px;
+                color: $headerFont;
+            }
+            .fa-instagram{
+                    padding-right: 25px;
+
+            }
+            .fa-bars{
+                padding: 0;
+            }
+        }
+
+        .buttonsContainers2{
+            align-items: center;
+
+            i{
+                padding: 0px 5px;
+                font-size: 18px;
+            }
+            span{
+                padding: 0px 5px;
+                font-size: 22px;
+                font-weight: 700;
+                font-family: 'Montserrat', 'sans-serif';
+            }
+        }
+        
+
+    }
+    .navbar-toggler{
+        padding: 0;
+        i{
+            
+            color: $headerFont;
+        }
+
+    }
+    
+}

@@ -1,0 +1,87 @@
+.formulario{
+    color: $formHeader;
+    .formTitle{
+        text-align: center;
+        margin-top: 62px;
+        font-size: 29px;
+        font-weight: 500;
+        
+    }
+    .formDescription{
+        text-align: center;
+        margin-top: 28px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .form{
+        
+        margin-top: 39px;
+        // display: flex;
+        // flex-direction: column;
+        input{
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            background-color: $formRadio;
+            font-size: 11px;
+            font-weight: 500;
+            color: $searchBarFont;
+        }
+        input::placeholder{
+            color: $searchBarFont;
+        }
+        textarea{
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            background-color: $formRadio;
+            font-size: 11px;
+            font-weight: 500;
+            color: $searchBarFont;
+        }
+        textarea::placeholder{
+            color: $searchBarFont;
+        }
+
+        .nameContainer{
+            display: flex;
+            margin: auto;
+            width: 100%;
+            height: 50px;
+            justify-content: space-between;
+            .nameInput{
+                width: 48.5%;
+                
+            }
+            .lastNameInput{
+                width: 48.5%;
+            }
+        }
+
+        .mailContainer{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            
+            margin: auto;
+            margin-top: 17px;
+            .mailInput{
+                width: 100%;
+                height: 50px;
+            }
+            .textoInput{
+                margin-top: 17px;
+                width: 100%;
+            }
+        }
+        .submitButton{
+            width: 100%;
+            border-radius: 10px;
+            background-color: $mainButton;
+            margin-top:25px;
+            padding: 15px;
+            color: white;
+        }
+    }
+}

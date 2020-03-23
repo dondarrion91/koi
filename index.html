@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Koi Web!</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main>
+    <section class="headerAndInfo mx-lg-5 pl-4 pr-4">
+
+      <header class="row mainHeader">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <a class="navbar-brand" href="#"><img class="img-fluid mainLogo" src="./img/logo_epigrafe.png" alt="logo koi"></a>
+            
+            <div class="buttonsContainers1 d-lg-none d-row">
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="buttonsContainers2 d-lg-flex d-none d-row">
+              <i class="fab fa-whatsapp"></i>
+              <span>+54 9 351 248-8956</span>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </div>
+
+          </nav>
+        </div>
+      </header>
+  
+      <section class="row info">
+        <div class="col-12">
+          <div class="row infoContainer">
+            <article class="text col-12 col-lg-6">
+              <div class="titulos">
+                <h1>Distribuidor de <br> productos asiáticos</h1>
+                <p>Somos una empresa especializada en la distribución <br> de productos importados de Asia.</p>
+                <button type="button" class="masProductos btn btn-danger"><h4>Pedi tu presupuesto ya!</h4></button>
+              </div>
+              
+            </article>
+  
+            <article class="infoCard col-12 col-lg-6">
+
+              <div class="searchCard">
+                <form action="">
+                  <input type="search" name="searchProduct" id="searchProduct" placeholder="¿Que estás buscando?">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </form>
+              </div>
+
+              <div class="tarjetas">
+                <div class="tarjeta alimentos m-1">
+                  <img class="icons" src="./img/Alimentos.svg" alt="Alimentos">
+                  <h4>Alimentos</h4>
+                  <img class="tarjeta_fotos" src="./img/01-Alimentos_cel.png" alt="salsa de soja kikkoman">
+                </div>
+                
+                <div class="tarjeta gaseosas m-1">
+                  <img class="icons" src="./img/Gaseosas y jugos.svg" alt="Alimentos">
+                  <h4>Gaseosas <br>y jugos</h4>
+                  <img class="tarjeta_fotos img-fluid" src="./img/04-Jugos-y-gaseosas.png" alt="salsa de soja kikkoman">
+                </div>
+    
+                <div class="tarjeta bebidas m-1">
+                  <img class="icons" src="./img/Bebidas-aclcoholicas.svg" alt="Alimentos">
+                  <h4>Bebidas <br>Alcoholicas</h4>
+                  <img class="tarjeta_fotos img-fluid" src="./img/02-Bebidas-alcoholicas.png" alt="salsa de soja kikkoman">
+                </div>
+    
+                <div class="tarjeta golosinas m-1">
+                  <img class="icons" src="./img/Golosinas.svg" alt="Alimentos">
+                  <h4>Golosinas</h4>
+                  <img class="tarjeta_fotos img-fluid" src="./img/03-Golosinas.png" alt="salsa de soja kikkoman">
+                </div>
+                <div class="tarjeta snacks m-1">
+                  <img class="icons" src="./img/Snack.svg" alt="Alimentos">
+                  <h4>Snack</h4>
+                  <img class="tarjeta_fotos img-fluid" src="./img/05-Snacks.png" alt="salsa de soja kikkoman">
+                </div>
+                <div class="tarjeta ramen m-1">
+                  <img class="icons" src="./img/Ramen.svg" alt="Alimentos">
+                  <h4>Ramen</h4>
+                  <img class="tarjeta_fotos img-fluid" src="./img/06-Ramen.png" alt="salsa de soja kikkoman">
+                </div>
+                <div class="tarjeta otros m-1">
+                  <img class="icons" src="./img/Otros.svg" alt="Alimentos">
+                  <h4>Otros</h4>
+                  <img class="tarjeta_fotos img-fluid" src="./img/07-Otros.png" alt="salsa de soja kikkoman">
+                </div>
+              </div>
+            </article>
+              
+          </div>
+        </div>
+  
+      </section>
+    </section>
+
+    <section class="nuestraEmpresa container-fluid pl-4 pr-4">
+      <img class="koiEmpresa" src="./img/koi-logo.svg" alt="koi-logo">
+      <h4>Nuestra empresa</h4>
+      <p>Somos una empresa joven y visionaria distribuidora de productos alimenticios asiáticos dentro de Córdoba para todo el interior del país. Mantenemos un compromiso de stock de mercadería contínua y Post Service sobre ventas.
+
+      Nuestra fortaleza remonta a nuestras raíces japonesas de trabajo y esfuerzo que garantizan una excelente calidad de servicio, manteniendo una comunicación fluida entre las partes y siempre proactivos sobre la solución de problemas que puedan surgir tanto lo que implica a los clientes/proveedores como gestiones de terceros. Generando relaciones de negocios a largo plazo en vista al crecimiento sostenido de las partes y siempre apuntando a una mejora continua y el uso de Just in Time.
+      Brindamos productos de calidad distintivos y exclusivos nunca antes vistos en el país.
+
+      Nuestra misión es Generar vínculos de calidad para hacer llegar los productos y experiencias que siempre quisieron del otro lado del mundo.
+
+      Nuestra visión es ampliar nuestra cartera de clientes a nivel provincial y expandirnos a otras provincias de Argentina.
+
+      </p>
+    </section>
+
+    <section class="container-fluid productosCard">
+      <div class="row">
+        <div class="col-12 d-flex flex-column align-items-center titleCard">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <h4>Productos <br>destacados</h4>
+        </div> 
+      </div>
+
+      <div class="row cardBody">
+
+        <div class="col-6 pl-3 pr-1">
+          <!--  -->
+          <div class="col-12 cardContainer">
+
+            <div class="cardBodyElement d-flex flex-column align align-items-center">
+  
+              <figure class="SacSac">
+                <img src="./img/Sac-sac-naranja.png" alt="SacSac naranja">
+              </figure>
+  
+              <article class="d-flex flex-column align align-items-center SacSaArticle">
+                <h4>Sac Sac <br> Naranja</h4>
+                
+  
+              </article>
+              <div class="collapse contentElement" id="collapseExample1">
+                <div class="card card-body border-0 text-center contentElementCard contentElementSacSac">
+                  <h4>Descripción</h6>
+                  <p>Harina para hacer
+                    tempura.</p>
+  
+                  <h6>Contenido</h6>
+                  <p>508g</p>
+                </div>
+              </div>
+  
+              <a class="toggler SacSacToggler" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              
+  
+            </div>
+            
+          </div>
+          <!--  -->
+          <div class="col-12 cardContainer">
+
+            <div class="cardBodyElement d-flex flex-column align align-items-center">
+  
+              <figure class="koala">
+                <img src="./img/Koala-original.png" alt="koala">
+              </figure>
+  
+              <article class="d-flex flex-column align align-items-center koalaArticle">
+                <h4>Koala Machi</h4>
+                
+  
+              </article>
+              <div class="collapse contentElement" id="collapseExample2">
+                <div class="card card-body border-0 text-center contentElementCard contentElementKoala">
+                  <h4>Descripción</h6>
+                  <p>Harina para hacer
+                    tempura.</p>
+  
+                  <h6>Contenido</h6>
+                  <p>508g</p>
+                </div>
+              </div>
+  
+              <a class="toggler koalaToggler" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              
+  
+            </div>
+            
+          </div>
+          <!--  -->
+          <div class="col-12 cardContainer onionContainer">
+
+            <div class="cardBodyElement d-flex flex-column align align-items-center">
+  
+              <figure class="onion">
+                <img src="./img/Onion-rings.png" alt="onion rings">
+              </figure>
+  
+              <article class="d-flex flex-column align align-items-center ">
+                <h4>Onion Rings</h4>
+                
+  
+              </article>
+              <div class="collapse contentElement show" id="collapseExample3">
+                <div class="card card-body border-0 text-center contentElementCard">
+                  <h4>Descripción</h6>
+                  <p>Harina para hacer
+                    tempura.</p>
+  
+                  <h6>Contenido</h6>
+                  <p>508g</p>
+                </div>
+              </div>
+  
+              <a class="toggler" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              
+  
+            </div>
+            
+          </div>
+          
+
+        </div>
+        
+        <!--  -->
+
+        <div class="col-6 pl-1 pr-3">
+          <!--  -->
+          <div class="col-12 cardContainer curryContainer">
+
+            <div class="cardBodyElement d-flex flex-column align align-items-center">
+  
+              <figure class="ottogi">
+                <img src="./img/ottogi-curry.png" alt="curry">
+              </figure>
+  
+              <article class="d-flex flex-column align align-items-center">
+                <h4>Ottogui Curry</h4>
+                
+  
+              </article>
+              <div class="collapse contentElement show" id="collapseExample4">
+                <div class="card card-body border-0 text-center contentElementCard">
+                  <h4>Descripción</h6>
+                  <p>Harina para hacer
+                    tempura.</p>
+  
+                  <h6>Contenido</h6>
+                  <p>508g</p>
+                </div>
+              </div>
+  
+              <a class="toggler" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              
+  
+            </div>
+            
+          </div>
+
+          <!--  -->
+
+          <div class="col-12 cardContainer sapporoContainer">
+
+            <div class="cardBodyElement d-flex flex-column align align-items-center">
+  
+              <figure class="sapporo">
+                <img src="./img/Sapporo-ichiban-pollo.png" alt="sapporo ramen">
+              </figure>
+  
+              <article class="d-flex flex-column align align-items-center">
+                <h4>Sapporo Ichiban</h4>
+                
+  
+              </article>
+              <div class="collapse contentElement" id="collapseExample5">
+                <div class="card card-body border-0 text-center contentElementCard">
+                  <h4>Descripción</h6>
+                  <p>Harina para hacer
+                    tempura.</p>
+  
+                  <h6>Contenido</h6>
+                  <p>508g</p>
+                </div>
+              </div>
+  
+              <a class="toggler" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              
+  
+            </div>
+            
+          </div>
+          <!--  -->
+          <div class="col-12 cardContainer maxinCafeContainer">
+
+            <div class="cardBodyElement d-flex flex-column align align-items-center">
+  
+              <figure class="maxinCafe">
+                <img src="./img/maxin.png" alt="Maxin coffee">
+              </figure>
+  
+              <article class="d-flex flex-column align align-items-center">
+                <h4>Maxim café</h4>
+                
+  
+              </article>
+              <div class="collapse contentElement" id="collapseExample6">
+                <div class="card card-body border-0 text-center contentElementCard">
+                  <h4>Descripción</h6>
+                  <p>Harina para hacer
+                    tempura.</p>
+  
+                  <h6>Contenido</h6>
+                  <p>508g</p>
+                </div>
+              </div>
+  
+              <a class="toggler" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              
+  
+            </div>
+            
+          </div>
+
+
+        </div>
+        
+
+
+        
+      </div>
+
+      <button type="button" class="btn masProductosCard"><h4>Consulta por más productos</h4></button>   
+    </section>
+
+    <section class="map container">
+      <div class="row">
+        <div class="col-12 mapContainer">
+          <img class="mapLogo" src="./img/mapa.svg" alt="ubicacion">
+          <h4 class="mapTitle">Podes encontrar
+            nuestros productos en</h4>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mapContent mCustomScrollbar" id="mapContent">
+            
+            <!-- Contenido dinamico -->
+            
+          </div>
+        </div>
+      </div>
+      
+      
+    </section>
+    <section class="mapElement container-fluid">
+      <div class="blackTitle">
+        <i class="fa fa-map" aria-hidden="true"></i>
+      </div>
+      <div id="mapid"></div>
+    </section>
+
+    <section class="formulario container">
+      <h4 class="formTitle">Déjanos tu consulta</h4>
+      <p class="formDescription">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. In fermentum vitae turpis sit
+        amet posuere. Donec sed leo ac diam.</p>
+      
+      <form action="#" class="form">
+        <div class="nameContainer row">
+          <input type="text" class="nameInput" placeholder="Nombre" required>
+          <input type="text" class="lastNameInput" placeholder="Apellido" required>
+        </div>
+        
+        <div class="row mailContainer">
+          <input type="text" class="mailInput" placeholder="Email" required>
+          <textarea name="texto" class="textoInput" id="texto" cols="30" rows="8" placeholder="Mensaje"></textarea>
+        </div>
+        <button type="submit" class="submitButton btn">Enviar mensaje</button>
+      </form>
+      
+    </section>
+
+    <section class="footer container">
+      <article class="footerHeader">
+        <div class="footerHeaderTitle">
+          <img class="img-fluid footerHeaderTitleImg" src="./img/logo_epigrafe.png" alt="logo koi">
+          <h4 class="footerHeaderTitleElement">Distribuidor de <br> productos asiáticos</h4>
+        </div>
+        <p class="footerHeaderCopyright">Copyright © 2020 Koi. All rights reserved.</p>
+      </article>
+
+      <article class="footerSearch">
+        <div class="footerSearchContainer">
+          <form action="">
+            <input type="search" name="searchProduct" placeholder="¿Que estás buscando?">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </form>
+        </div>
+      </article>
+
+      <article class="footerNavBar">
+        <ul class="footerNavBarList">
+          <li class="footerNavBarListItem">Home</li>
+          <li class="footerNavBarListItem">Productos</li>
+          <li class="footerNavBarListItem">Quienes <br>somos</li>
+          <li class="footerNavBarListItem">Contacto</li>
+        </ul>
+      </article>
+
+      <article class="footerRedes">
+        <h6 class="footerRedesTitle">Seguinos!</h6>
+        <div class="footerRedesContainer">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="footerTopButton">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        <button class="footerTopButtonElement btn">TOP</button>
+      </article>
+    </section>
+    
+  </main>
+  
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+<script src="./js/map.js"></script>
+<script src="./js/scrollbar.js"></script>
+</html>

@@ -1,0 +1,86 @@
+.map{
+    background-color: $fondo;
+    padding-top: 56px;
+    .mapContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mapLogo{
+            width:50px;
+            height: 50px;
+        }
+        .mapTitle{
+            text-align: center;
+            padding-top:27px;
+            margin: 0;
+            font-size: 29px;
+            line-height: 39px;
+            color: $formHeader;
+        }
+    }
+    .mapContent{
+        background-color: $footer;
+        border-radius: 15px;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 33px;
+        overflow: hidden;
+        hr{
+            background-color: $mapGray;
+            margin-top: 15px;
+        }
+        &Element{
+            color: $mapGray;
+            &Title{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 22px;
+                margin: 0;
+                margin-top: 52px;
+            }
+            &Text{
+                margin: 0;
+                margin-top: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+            &Button{
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 700;
+                margin-top: 19px;
+                border-radius: 10px;
+                color: white;
+                padding: 16px;
+                background-color: $mapGray;
+            }
+        }
+    }
+    .mCSB_scrollTools{
+        left: 0;
+        margin-top: 38px;
+    }
+    .mCSB_container{
+        margin: 0;
+        margin-left: 30px;
+    }
+    .mCSB_scrollTools{
+        background-color: $formHeader;
+        width: 9px;
+        border-radius: 16px;
+        .mCSB_draggerRail{
+            background-color: $formHeader;
+        }
+        .mCSB_dragger{
+            .mCSB_dragger_bar{
+                width: 9px;
+                background-color: $mapGray;
+            }
+            
+        }
+    }  
+    
+    
+}
+

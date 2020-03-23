@@ -1,0 +1,206 @@
+.productosCard{
+    background-color: $fondo;
+    
+    .titleCard{
+        i{
+            margin-top: 88px;
+            font-size: 26px;
+            color:$bebidasCarrouselBack;
+        }
+        h4{
+            margin-top:20px;
+            font-size: 29px;
+            line-height: 39px;
+            text-align: center;
+            color: $formHeader;
+        }
+        
+    }
+    .cardBody{
+        margin-top: 57px;
+        
+        .cardContainer{
+            padding: 0;
+            margin:10px 0px;
+        }
+
+        .onionContainer{
+            color:$snackElement;
+            i{
+                color:$snackElement;
+            }
+        }
+
+        .curryContainer{
+            color:$alimentosElement;
+            i{
+                color:$alimentosElement;
+            }
+        }
+
+        .sapporoContainer{
+            color:$ramenElementHeader;
+            i{
+                color:$ramenElementHeader;
+            }
+        }
+        .maxinCafeContainer{
+            color:$otrosElement;
+            i{
+                color:$otrosElement;
+            }
+        }
+        
+
+        &Element{
+            background-color: white;
+            border-radius: 10px;
+            figure{
+                margin: 0;
+                width: 100%;
+                border-radius:10px 10px 0px 0px;
+                height: 111px;
+                display: flex;
+                img{
+                    width: 157.5px;
+                    height: 157.5px;
+                    margin: auto;
+                    top: 15px;
+                    position: relative;
+                    
+                }
+                
+            }
+            .SacSac{
+                background-color: $gaseosasElement;
+                
+            }
+            .koala{
+                background-color: $golosinasElement;
+            }
+            .onion{
+                background-color: $snackElement;
+            }
+            .ottogi{
+                background-color: $alimentosElement;
+            }
+            .sapporo{
+                background-color:$ramenElementHeader;
+            }
+            .maxinCafe{
+                background-color:$otrosElement;
+            }
+
+            article{
+                width: 100%;
+                height: 88px;
+                h4{
+                    margin: 0;
+                    margin-top: 44px;
+                    font-size: 17px;
+                    font-weight: 700;
+                    line-height: 22px;
+                }
+                
+            }
+
+            .SacSaArticle{
+                h4{
+                    color:$gaseosasElementHeader;
+                    
+                }
+                
+            }
+
+            .koalaArticle{
+                h4{
+                    color:$golosinasElement;
+                    
+                }
+                
+            }
+
+            .ottogiArticle{
+                h4{
+                    color:$alimentosElement;
+                    
+                }
+                
+            }
+
+            .toggler{
+                
+                height: 20px;
+                margin-top: 12px;
+                margin-bottom: 15px;
+                
+            }
+
+            .SacSacToggler{
+                color:$gaseosasElementHeader;
+            }
+
+            .koalaToggler{
+                color:$golosinasElement;
+            }
+
+            .ottogiToggler{
+                color:$alimentosElement;
+            }
+
+            .contentElement{
+                &Card{
+                    padding: 0;
+                    
+                    h4{
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        margin-top: 19px;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                    h6{
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        margin-top: 22px;
+                    }
+                }
+
+                &SacSac{
+                    color: $gaseosasElementHeader;
+                }
+
+                &Koala{
+                    color:$golosinasElement;
+                }
+
+                &Ottogi{
+                    color:$alimentosElement;
+                }
+
+                
+                
+            }
+        }
+    }
+    .masProductosCard{
+            width: 100%;
+            margin-top: 26px;
+            height: 50px;
+            border-radius: 10px;
+            background-color:$mainButton;
+            h4{
+                margin: 0;
+                font-size: 18px;
+                color: white;
+            }
+    }
+}
