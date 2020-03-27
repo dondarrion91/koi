@@ -21,12 +21,16 @@ const cargarMapa = async () =>{
         contenedorMapa.innerHTML += `
     
         <article class="mapContentElement">
-            <h4 class="mapContentElementTitle">${locales[i].name}</h4>
-            <p class="mapContentElementText">${locales[i].description}</p>
+            <div class="mapContentElementContainer">
+                <h4 class="mapContentElementContainerTitle">${locales[i].name}</h4>
+                <p class="mapContentElementContainerText">${locales[i].description}</p>
+            </div>
+           
             <button type="button" class="btn mapContentElementButton">Ver en <br> mapa</button>
       
-            <hr>
+           
         </article>
+        <hr>
         `;
     
         let marker = await L.marker([locales[i].x, locales[i].y]).addTo(mymap);
@@ -53,6 +57,20 @@ let locales = [
         description: "Productos gastronomicos y de importación.",
         x: -31.413161,
         y: -64.192034
-    }
+    },
+    {
+        name: "El almacen de Julian",
+        description: "Productos gastronomicos y de importación.",
+        x: -31.413161,
+        y: -64.192034
+    },
+    {
+        name: "El Nido Clothes and Games",
+        description: "Golosinas, snacks y gaseosas: Av.Colón 345(Galería Cinerama) local 78, frente a boleterías, El Nido Clothes and Games y atienden de lunes a viernes de",
+        x: -31.412261,
+        y: -64.187968
+    },
     
 ]
+
+

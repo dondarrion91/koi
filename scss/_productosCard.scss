@@ -1,4 +1,7 @@
 .productosCard{
+    @media screen and (min-width:992px){
+        display: none;
+    }
     background-color: $fondo;
     
     .titleCard{

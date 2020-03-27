@@ -55,8 +55,8 @@
             </div>
 
             <div class="buttonsContainers2 d-lg-flex d-none d-row">
-              <i class="fab fa-whatsapp"></i>
-              <span>+54 9 351 248-8956</span>
+              
+              <span id="phoneNumber">+54 9 351 248-8956</span>
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-instagram" aria-hidden="true"></i>
             </div>
@@ -134,19 +134,40 @@
       </section>
     </section>
 
-    <section class="nuestraEmpresa container-fluid pl-4 pr-4">
-      <img class="koiEmpresa" src="./img/koi-logo.svg" alt="koi-logo">
-      <h4>Nuestra empresa</h4>
-      <p>Somos una empresa joven y visionaria distribuidora de productos alimenticios asiáticos dentro de Córdoba para todo el interior del país. Mantenemos un compromiso de stock de mercadería contínua y Post Service sobre ventas.
+    <section class="nuestraEmpresa container-fluid pl-4 pr-4"id="nuestraEmpresa">
+      <div class="nuestraEmpresaContainer" >
+        <img class="koiEmpresa" src="./img/koi-logo.svg" alt="koi-logo">
+    
+    
+        <div class="nuestraEmpresaContainerText">
+    
+          <h4>Nuestra empresa</h4>
+          <p>Somos una empresa joven y visionaria distribuidora de productos alimenticios asiáticos dentro de Córdoba para
+            todo el interior del país. Mantenemos un compromiso de stock de mercadería contínua y Post Service sobre ventas.
+    
+            Nuestra fortaleza remonta a nuestras raíces japonesas de trabajo y esfuerzo que garantizan una excelente calidad
+            de servicio, manteniendo una comunicación fluida entre las partes y siempre proactivos sobre la solución de
+            problemas que puedan surgir tanto lo que implica a los clientes/proveedores como gestiones de terceros.
+            Generando
+            relaciones de negocios a largo plazo en vista al crecimiento sostenido de las partes y siempre apuntando a una
+            mejora continua y el uso de Just in Time.
+            Brindamos productos de calidad distintivos y exclusivos nunca antes vistos en el país.
+    
+            Nuestra misión es Generar vínculos de calidad para hacer llegar los productos y experiencias que siempre
+            quisieron
+            del otro lado del mundo.
+    
+            Nuestra visión es ampliar nuestra cartera de clientes a nivel provincial y expandirnos a otras provincias de
+            Argentina.
+    
+          </p>
+        </div>
+      </div>
 
-      Nuestra fortaleza remonta a nuestras raíces japonesas de trabajo y esfuerzo que garantizan una excelente calidad de servicio, manteniendo una comunicación fluida entre las partes y siempre proactivos sobre la solución de problemas que puedan surgir tanto lo que implica a los clientes/proveedores como gestiones de terceros. Generando relaciones de negocios a largo plazo en vista al crecimiento sostenido de las partes y siempre apuntando a una mejora continua y el uso de Just in Time.
-      Brindamos productos de calidad distintivos y exclusivos nunca antes vistos en el país.
+      <div id="nuestraEmpresaMapa">
+        <!-- mapa dinamico -->
+      </div>
 
-      Nuestra misión es Generar vínculos de calidad para hacer llegar los productos y experiencias que siempre quisieron del otro lado del mundo.
-
-      Nuestra visión es ampliar nuestra cartera de clientes a nivel provincial y expandirnos a otras provincias de Argentina.
-
-      </p>
     </section>
 
     <section class="container-fluid productosCard">
@@ -379,7 +400,7 @@
       <button type="button" class="btn masProductosCard"><h4>Consulta por más productos</h4></button>   
     </section>
 
-    <section class="map container">
+    <section class="map container" id="map">
       <div class="row">
         <div class="col-12 mapContainer">
           <img class="mapLogo" src="./img/mapa.svg" alt="ubicacion">
@@ -407,10 +428,14 @@
     </section>
 
     <section class="formulario container">
-      <h4 class="formTitle">Déjanos tu consulta</h4>
-      <p class="formDescription">Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. In fermentum vitae turpis sit
-        amet posuere. Donec sed leo ac diam.</p>
+      <div class="formularioText">
+        <h4 class="formularioTextTitle">Déjanos tu consulta</h4>
+        <p class="formularioTextDescription">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. In fermentum vitae turpis sit
+          amet posuere. Donec sed leo ac diam.</p>
+          <img class="formularioTextImage" src="./img/koi.svg" alt="koi pez">
+      </div>
+      
       
       <form action="#" class="form">
         <div class="nameContainer row">
@@ -436,37 +461,43 @@
         <p class="footerHeaderCopyright">Copyright © 2020 Koi. All rights reserved.</p>
       </article>
 
-      <article class="footerSearch">
-        <div class="footerSearchContainer">
-          <form action="">
-            <input type="search" name="searchProduct" placeholder="¿Que estás buscando?">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </form>
-        </div>
-      </article>
+      <div class="divSearch">
+        <article class="footerSearch">
+          <div class="footerSearchContainer">
+            <form action="">
+              <input type="search" name="searchProduct" placeholder="¿Que estás buscando?">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </form>
+          </div>
+        </article>
+  
+        <article class="footerNavBar">
+          <ul class="footerNavBarList">
+            <li class="footerNavBarListItem">Home</li>
+            <li class="footerNavBarListItem">Productos</li>
+            <li class="footerNavBarListItem">Quienes <br>somos</li>
+            <li class="footerNavBarListItem">Contacto</li>
+          </ul>
+        </article>
+      </div>
+      
+      <div class="divRedes">
+        <article class="footerRedes">
+          <h6 class="footerRedesTitle">Seguinos!</h6>
+          <div class="footerRedesContainer">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </article>
+  
+        <article class="footerTopButton">
+          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          <button class="footerTopButtonElement btn">TOP</button>
+        </article>
+      </section>
+      </div>
 
-      <article class="footerNavBar">
-        <ul class="footerNavBarList">
-          <li class="footerNavBarListItem">Home</li>
-          <li class="footerNavBarListItem">Productos</li>
-          <li class="footerNavBarListItem">Quienes <br>somos</li>
-          <li class="footerNavBarListItem">Contacto</li>
-        </ul>
-      </article>
-
-      <article class="footerRedes">
-        <h6 class="footerRedesTitle">Seguinos!</h6>
-        <div class="footerRedesContainer">
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-          <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        </div>
-      </article>
-
-      <article class="footerTopButton">
-        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-        <button class="footerTopButtonElement btn">TOP</button>
-      </article>
-    </section>
+      
     
   </main>
   
@@ -483,4 +514,5 @@ integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUT
 crossorigin=""></script>
 <script src="./js/map.js"></script>
 <script src="./js/scrollbar.js"></script>
+<script src="./js/app.js"></script>
 </html>

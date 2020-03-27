@@ -1,12 +1,37 @@
 .footer{
-    margin-top: 51px;
+    
     background-color: $footer;
     color: $formTitle;
+    margin: 0;
+    max-width: 100%;
+    .divSearch{
+        @media screen and (min-width:992px){
+            width: 33.3333%;
+            
+        }  
+    }
+    .divRedes{
+        @media screen and (min-width:992px){
+            width: 33.3333%;
+        }  
+    }
+    @media screen and (max-width:991px){
+        margin-top: 51px;
+    }
+
+    @media screen and (min-width:992px){
+        margin-top: 300px;
+        display: flex;
+    }
+    
     &Header{
         padding-top: 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and (min-width:992px){
+            width: 33.3333%;
+        }
         &Title{
             display: flex;
             justify-content: center;
@@ -35,7 +60,12 @@
         margin-top: 55px;
         &Container{
             @include barraBusquedas;
+            @media screen and (min-width:992px){
+                width: 100%;
+                
+            }  
         }
+        
     }
 
     &NavBar{

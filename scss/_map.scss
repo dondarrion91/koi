@@ -1,27 +1,78 @@
+#nuestraEmpresaMapa{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 61.5px;
+}
+
 .map{
     background-color: $fondo;
     padding-top: 56px;
+    margin: 0;
+    max-width: 100%;
+    
+
+    @media screen and(min-width:992px){
+        display: flex;
+        background-color: black;
+        padding: 0;
+        border-radius: 15px 15px 0px 0px;
+    }
+
     .mapContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and(min-width:992px){
+            padding-top: 63px;
+            
+        }
         .mapLogo{
-            width:50px;
-            height: 50px;
+            
+
+            @media screen and(max-width:991px){
+                width:50px;
+                height: 50px;
+                
+            }
+
+            @media screen and(min-width:992px){
+                width:79.33px;
+                
+            }
         }
         .mapTitle{
             text-align: center;
             padding-top:27px;
             margin: 0;
-            font-size: 29px;
-            line-height: 39px;
+            
             color: $formHeader;
+
+            @media screen and(max-width:991px){
+                font-size: 29px;
+                line-height: 39px;
+                
+            }
+
+            @media screen and(min-width:992px){
+                font-size: 24px;
+                line-height: 30px;
+                padding: 0px 120px;
+                padding-top:27px;
+            }
         }
     }
     .mapContent{
         background-color: $footer;
         border-radius: 15px;
-        height: 350px;
+        @media screen and(max-width:991px){
+            height: 350px;
+            
+        }
+
+        @media screen and(min-width:992px){
+            height: 275px;
+        }
+        
         margin-top: 40px;
         margin-bottom: 33px;
         overflow: hidden;
@@ -31,20 +82,49 @@
         }
         &Element{
             color: $mapGray;
-            &Title{
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 22px;
-                margin: 0;
-                margin-top: 52px;
+            @media screen and(max-width:991px){
+                    
+                    
             }
-            &Text{
-                margin: 0;
-                margin-top: 10px;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 22px;
+    
+            @media screen and(min-width:992px){
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
+            &Container{
+                @media screen and(max-width:991px){
+                    
+                    
+                }
+        
+                @media screen and(min-width:992px){
+                    width: 80%;
+                }
+                &Title{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 22px;
+                    margin: 0;
+                    margin-top: 52px;
+                }
+                &Text{
+                    margin: 0;
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    @media screen and(max-width:991px){
+                    
+                    
+                    }
+            
+                    @media screen and(min-width:992px){
+                        width: 80%;
+                    }
+                }
+            }
+            
             &Button{
                 font-size: 16px;
                 line-height: 22px;
@@ -54,6 +134,22 @@
                 color: white;
                 padding: 16px;
                 background-color: $mapGray;
+
+                @media screen and(max-width:991px){
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 700;
+                    padding: 16px;
+                }
+        
+                @media screen and(min-width:992px){
+                    width: 76px;
+                    height: 76px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 0px;
+                }
             }
         }
     }

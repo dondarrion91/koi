@@ -1,23 +1,126 @@
 .nuestraEmpresa{
-    background-color: $nuestraEmpresaBack;
+    
+    &Container{
+        
+        @media screen and (min-width:992px){
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: auto;
+            padding: 0px 100px;
+        }
+
+        @media screen and (min-width:992px) and (max-width:1439px){
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 150px;
+        }
+
+        @media screen and (min-width:1440px){
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        
+        
+        .koiEmpresa{
+        
+
+            @media screen and (max-width: 768px){
+                width:30%;
+                margin-top: 90px;
+            }
+    
+            @media screen and (min-width: 769px){
+                width: 398px;
+                height: 315px;
+            }
+            
+        }
+
+        &Text{
+            
+
+            @media screen and (min-width:992px) and (max-width:1439px){
+                width: 100%;
+                margin: 60px 0px;
+                
+            }
+
+            @media screen and (min-width: 1440px){
+                width: 50%;
+                margin: 170px 0px;
+            }
+
+            h4{
+                
+                margin-top: 30px;
+                font-size: 33px;
+                font-weight: 400;
+                line-height: 75px;
+                
+                @media screen and (max-width:991px){
+                    color: black;
+                    padding: 0;
+                    font-size: 33px;
+                    font-weight: 400;
+                    line-height: 75px;
+                }
+                
+                @media screen and (min-width:992px){
+                    color: black;
+                    padding: 0;
+                    font-size: 48px;
+                    font-weight: 400;
+                    line-height: 75px;
+                }
+            }
+            p{
+                margin:0;
+                
+                padding-bottom: 81px;
+                
+
+                @media screen and (max-width:991px){
+                    margin:0;
+                    margin-top: 28px;
+                    padding-bottom: 81px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                @media screen and (min-width:992px){
+                    color: black;
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 38.5px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+                
+            }
+
+            
+
+            @media screen and (min-width:992px){
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:991px){
+        background-color: $nuestraEmpresaBack;
+    }
+
+    @media screen and (min-width:991px){
+        background-color: yellow;
+    }
+
     background-image: url(../img/Textura-fondo-historia.svg);
     color: white;
-    .koiEmpresa{
-        width:50%;
-        margin-top: 90px;
-    }
-    h4{
-        margin-top: 30px;
-        font-size: 33px;
-        font-weight: 400;
-        line-height: 75px;
-    }
-    p{
-        margin:0;
-        margin-top: 28px;
-        padding-bottom: 81px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-    }
+    
+    
 }
