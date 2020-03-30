@@ -69,15 +69,39 @@
     }
 
     &NavBar{
+        #footerNavBarNumber{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            span{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            i{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
         margin-top: 38px;
         &List{
             padding: 0;
+            padding-top: 31px;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             &Item{
                 list-style-type: none;
-                font-size: 14px;
+                
+                @media screen and (max-width: 991px){
+                    font-size: 14px;
+                }
+
+                @media screen and (min-width: 992px){
+                    font-size: 16px;
+                    br{
+                        display: none;
+                    }
+                }
                 font-weight: 400;
                 line-height: 18px;
                 text-align: center;

@@ -75,9 +75,25 @@ function cambioAncho(){
 
 let number = document.getElementById("phoneNumber");
 let whatsapp = document.getElementsByClassName("fa-whatsapp")[0];
-let footerList = document.getElementsByClassName("footerNavBar")[0];
-let footerListNavbar = document.getElementsByClassName("footerNavBarList")[0];
+
+// logo de whatsapp
+let whatsapp2 = document.createElement("i");
+let classWhatsapp2 = document.createAttribute("class");
+    classWhatsapp2.value = "fab fa-whatsapp";
+    whatsapp2.setAttributeNode(classWhatsapp2);
+
+// numero de telefono
+let number2 = document.createElement("span");
+let classNumber2 = document.createAttribute("class");
+    classNumber2.value = "footerNavBarNumber";
+    number2.setAttributeNode(classNumber2);
+    number2.innerHTML = "+54 9 351 248-8956"
+
+let footerNavBarList = document.getElementsByClassName("footerNavBarList")[0];
+let footerNavBarNumber = document.getElementById("footerNavBarNumber");
 let buttonsContainers2 = document.getElementsByClassName("buttonsContainers2")[0];
+let span = document.createElement("span");
+span.innerHTML = "Córdoba - Argentina";
 
 
 window.addEventListener("resize",phoneChange);
@@ -85,16 +101,23 @@ window.addEventListener("DOMContentLoaded",phoneChange);
 
 function phoneChange(){
         
-    if(deviceWidth < 1100 && deviceWidth > 991 && !buttonsContainers2.classList.contains(whatsapp)){
-        
-        footerList.insertBefore(whatsapp,footerListNavbar);
-        footerList.insertBefore(number,footerListNavbar);
-        
-        
-    }else if(!buttonsContainers2.classList.contains(whatsapp) && !buttonsContainers2.classList.contains(number)){
+    if(deviceWidth > 991){
+        // footer
+        footerNavBarNumber.appendChild(span);
+        footerNavBarNumber.appendChild(whatsapp2);
+        footerNavBarNumber.appendChild(number2);
+
+        //header
         buttonsContainers2.appendChild(whatsapp);
         buttonsContainers2.appendChild(number);
-        
+
+    }else if(deviceWidth <= 991){
+        //footer
+        footerNavBarNumber.removeChild(span);
+        footerNavBarNumber.removeChild(whatsapp);
+        footerNavBarNumber.removeChild(number);
+
+        //header
     }
     
 }
