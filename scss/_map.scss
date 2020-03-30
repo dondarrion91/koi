@@ -129,6 +129,7 @@
                 font-size: 16px;
                 line-height: 22px;
                 font-weight: 700;
+                
                 margin-top: 19px;
                 border-radius: 10px;
                 color: white;
@@ -143,12 +144,13 @@
                 }
         
                 @media screen and(min-width:992px){
-                    width: 76px;
-                    height: 76px;
+                    width: 97px;
+                    height: 60px;
                     font-weight: 700;
                     font-size: 14px;
                     line-height: 18px;
                     padding: 0px;
+                    margin: 0px 5%;
                 }
             }
         }
