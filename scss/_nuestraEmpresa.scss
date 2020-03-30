@@ -18,7 +18,7 @@
 
         @media screen and (min-width:1440px){
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
 
         
@@ -26,12 +26,14 @@
         .koiEmpresa{
         
 
-            @media screen and (max-width: 768px){
+            
+
+            @media screen and (max-width: 1439px){
                 width:30%;
                 margin-top: 90px;
             }
     
-            @media screen and (min-width: 769px){
+            @media screen and (min-width: 1440px){
                 width: 398px;
                 height: 315px;
             }
@@ -53,14 +55,14 @@
             }
 
             h4{
-                
+                margin:0;
                 margin-top: 30px;
                 font-size: 33px;
                 font-weight: 400;
                 line-height: 75px;
                 
                 @media screen and (max-width:991px){
-                    color: black;
+                    
                     padding: 0;
                     font-size: 33px;
                     font-weight: 400;
@@ -68,7 +70,7 @@
                 }
                 
                 @media screen and (min-width:992px){
-                    color: black;
+                    
                     padding: 0;
                     font-size: 48px;
                     font-weight: 400;
@@ -90,7 +92,7 @@
                     line-height: 24px;
                 }
                 @media screen and (min-width:992px){
-                    color: black;
+                    
                     padding: 0;
                     margin: 0;
                     margin-top: 38.5px;
@@ -116,7 +118,7 @@
     }
 
     @media screen and (min-width:991px){
-        background-color: yellow;
+        background-color: $nuestraEmpresaBack;
     }
 
     background-image: url(../img/Textura-fondo-historia.svg);

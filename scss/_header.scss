@@ -3,6 +3,13 @@
     
     .mainHeader{
 
+        &Col{
+            @media screen and (min-width:992px){
+                padding: 0px;
+                padding-right: 15px;
+            }
+        }
+
         @media screen and (min-width:992px){
             padding: 0px 15px;
         }
@@ -56,12 +63,12 @@
                 width: 80px;
                 height: 65px;
                 @media screen and (max-width:768px){
-                    width: 80px;
+                    width: 75px;
                     height: 65px;
                 }
                 
                 @media screen and (min-width:769px){
-                    width: 127px;
+                    width: 115px;
                     height: 100px;
                 }
             }

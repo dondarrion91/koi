@@ -17,6 +17,7 @@
                 text-align: left;
                 font-size: 48px;
                 font-weight: 500;
+                margin: 0;
             }
 
             @media screen and (max-width: 991px){
@@ -51,8 +52,8 @@
 
             @media screen and (min-width:992px){
                 width: 248.27px;
-                height: 128.62px;
-                margin-top: 48px;
+                height: 175.62px;
+                margin-top: 28px;
             }
         }
     }
@@ -62,6 +63,7 @@
     .form{
         @media screen and (min-width: 992px){
             width: 50%;
+            margin-top: 15px;
         }
 
         @media screen and (max-width: 991px){

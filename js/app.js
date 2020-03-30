@@ -36,15 +36,15 @@ window.addEventListener("resize",cambioAncho);
 
 function cambioAncho(){
     deviceWidth = device.offsetWidth;
-    console.log(deviceWidth)
+    
     if(deviceWidth >= 992){
-        console.log("mayor")
+        
         nuestraEmpresaMapa.appendChild(map);
         nuestraEmpresaMapa.appendChild(mapElement);
         mapTitle.innerHTML = `Nuestros <br> locales <br> asociados`;
 
     }else if(deviceWidth < 992){
-        console.log("menor")
+        
         map = document.getElementById("map");
         mapElement = document.getElementsByClassName("mapElement")[0];
 
@@ -99,7 +99,49 @@ function phoneChange(){
     
 }
 
+// cambio de las fotos de las tarjetas
 
+
+function changeSrc(){
+    
+    let webUrl = [
+        "../img/ESCRITORIO/01-Alimentos.png",
+        "../img/ESCRITORIO/03-Jugos-y-gaseosas.png",
+        "../img/ESCRITORIO/02-Bebidas-alcoholicas.png",
+        "../img/ESCRITORIO/04-Golosinas.png",
+        "../img/ESCRITORIO/05-snacks.png",
+        "../img/ESCRITORIO/06-Ramen.png",
+        "../img/ESCRITORIO/07-Otros.png",
+    ];
+    
+    let celUrl = [
+        "../img/01-Alimentos_cel.png",
+        "../img/04-Jugos-y-gaseosas.png",
+        "../img/02-Bebidas-alcoholicas.png",
+        "../img/03-Golosinas.png",
+        "../img/05-snacks.png",
+        "../img/06-Ramen.png",
+        "../img/07-Otros.png",
+    ];
+    
+    let fotos = document.getElementsByClassName("tarjeta_fotos");
+
+    if(deviceWidth>991){
+        for(let i=0;i<fotos.length;i++){
+            fotos[i].src = webUrl[i];
+        }
+    }else if(deviceWidth<991){
+        
+        for(let i=0;i<fotos.length;i++){
+            fotos[i].src = celUrl[i];
+        }
+    }
+    
+
+}
+
+window.addEventListener("resize",changeSrc);
+window.addEventListener("load",changeSrc);
 
 
 
